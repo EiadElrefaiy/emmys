@@ -1,0 +1,463 @@
+html{
+    overflow-x: hidden;
+    }
+body{
+    background-color: #f6f6f6;
+}
+
+.h1-hero-section {
+display: flex;
+height: 700px; /* اختر ارتفاعًا مناسبًا بدلاً من 500px والتحكم فيه حسب احتياجاتك */
+}
+
+.hero-slider-1 {
+width: 100%; /* يضمن تمدد السلايدر للعرض بالكامل */
+}
+
+.swiper-slide {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: auto; /* يمكن للعناصر تحديد ارتفاعها بناءً على المحتوى */
+}
+
+.container_ovelay {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Set the maximum width as needed */
+}
+
+.overlay_mob{
+ display: none;
+}
+.menu-mob{
+ display: none;
+}
+
+
+.background-image {
+    position: relative;
+    right: 10px;
+}
+
+.hero_logo{
+     width: 350px; 
+ }
+ .logo_text{
+    font-family: 'Quest'; 
+    font-size: 28px;
+    color: #203b72;
+    font-weight: bold;
+ }
+
+ .question{
+    direction: ltr;
+}
+
+
+.question{
+    font-size: 20px;
+    position: relative;
+    top : 8px; 
+    font-family: 'Quest'; 
+    color: #868686;
+}
+
+.email_sub{
+    height: 60px;
+     font-family: 'Quest';
+}
+
+.subscribe{
+    background-color: #243746; 
+    border-radius: 5px; 
+    width: 50%; 
+    font-family: 'Quest';
+}
+
+.seperation{
+    padding: 60px 60px;
+}
+
+#line_mob{
+    display: none;
+}
+
+.hero-text-1{
+ position: relative;
+ top: -100px;
+}
+
+.offers-text{
+    margin-top: 27%;
+}
+
+.about-us-row{
+    border-radius: 20px;
+    position: relative; 
+    right: 40px;
+}
+
+@media only screen and (max-width: 400px) {
+    .offers-title-mob{
+        display: block;
+        position: relative;
+        top: 30px;
+     }
+}
+@media only screen and (max-width: 420px) {
+    .about-us-row{
+    border-radius: 20px;
+    position: relative; 
+    right: 0;
+}
+}
+@media only screen and (max-width: 577px) {
+    .about-us-row{
+    border-radius: 20px;
+    position: relative; 
+    right: 0;
+}
+
+}
+
+.offers-title-mob{
+    display: none;
+}
+
+@media only screen and (max-width: 1190px) {
+    .sandwiches-image{
+        scale: 1.15;
+    }
+    .bags-image{
+        scale: 1.22;
+    }
+}
+
+iframe{
+    border:0; 
+    width: 100%; 
+    height: 545px;
+}
+@media only screen and (max-width: 992px) {
+    iframe{
+    border:0; 
+    width: 100%; 
+    height: 375px;
+}
+    .hero-text-1{
+        position: relative;
+        top: 0px;
+    }
+     .hero_logo{
+        width: 245px;
+     }
+
+    .sandwiches-image{
+        scale: 1;
+    }
+
+    .bags-image{
+        scale: 1;
+    }
+
+
+     .order_now{
+        margin: 25px 0 0 0;
+     }
+
+    #line_pc{
+    display: none;
+    }
+    #line_mob{
+    display: block;
+    }
+
+    .question{
+    direction: rtl;
+    }
+
+    .offers-text{
+    margin-top: 15%;
+    }   
+
+
+    .logo_text{
+    font-size: 20px;
+     }
+     .container_ovelay{
+        position: relative;
+        right: 10px;
+     }
+
+     .overlay_mob{
+     display: block;
+     }
+     .overlay_pc{
+     display: none;
+     }
+
+     .menu-mob{
+        display: block;
+     }
+
+     .menu-pc{
+        display: none;
+     }
+
+     .question{
+        text-align: center;
+        margin-bottom: 25px;
+     }
+     .subscribe{
+        margin-top: 5px;
+        width: 100%;
+     }
+     
+     .offers-title-pc{
+        display: none;
+     }
+
+     .offers-title-mob{
+        display: block;
+     }
+     .overlay-image2{
+        display: none;
+     }
+
+    }
+@media only screen and (max-width: 1400px) {
+    .background-image {
+        right: -15px;
+     }
+    }
+
+
+
+
+.overlay-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-image2{
+    position: absolute;
+    top: 550px;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 1100px) {
+    .overlay-image2{
+    position: absolute;
+    top: 750px;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+}
+
+.overlay-image3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-image4{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-image_move {
+    animation: moveUpDownAnimation 2s ease-in-out infinite;
+}
+
+@keyframes moveUpDownAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+} 
+
+
+  .infinite-movement {
+    width: 100%;
+    overflow: hidden;
+    }
+    
+    .ticker {
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        animation: scrollTicker 7s linear infinite;
+    }
+
+    .animate {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px; /* Adjust as needed */
+    }
+
+    @keyframes scrollTicker {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-5%);
+        display: none;
+    }
+    }
+
+
+    @keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-text {
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.scale_fade {
+    animation: fadeInScale 1s ease-in-out;
+}
+
+.horizontal-scrollable > .row_menu {
+width: 98%;
+overflow-x: scroll; /* Add the ability to scroll */
+white-space: nowrap;
+-webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
+
+}
+
+.horizontal-scrollable > .row_menu > .col{
+    display: inline-block;
+}
+
+.row_menu::-webkit-scrollbar {
+display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.row_menu {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+p{
+    font-size: 18px !important;
+}
+
+.h1-hero-section h1 .h1-hero-section h2 , .h1-hero-section h3 {
+  font-size: 36px !important;
+}
+
+.h1-hero-section p{
+  font-size: 22px !important;
+}
+
+#about_us h3{
+    font-size: 36px !important;
+}
+
+#about_us p{
+    font-size: 18px !important;
+}
+
+.product-thumb .name{
+    font-size: 20px !important;
+}
+.product-thumb .price , .product-thumb .price{
+    font-size: 18px !important;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+p{
+    font-size: 16px !important;
+}
+
+.h1-hero-section h1{
+  font-size: 36px !important;
+}
+
+.h1-hero-section p{
+  font-size: 22px !important;
+}
+
+#about_us h3{
+    font-size: 28px !important;
+}
+
+#about_us p{
+    font-size: 16px !important;
+}
+
+.product-thumb .name{
+    font-size: 20px !important;
+}
+.product-thumb .price , .product-thumb .price{
+    font-size: 18px !important;
+}
+
+}
+
+@media only screen and (max-width: 400px) {
+p{
+    font-size: 18px !important;
+}
+
+.h1-hero-section h1{
+  font-size: 30px !important;
+}
+
+.h1-hero-section p{
+  font-size: 18px !important; 
+}
+
+#about_us h3{
+    font-size: 30px !important;
+}
+
+#about_us p{
+    font-size: 18px !important;
+}
+
+.product-thumb .name{
+    font-size: 24px !important;
+}
+.product-thumb .price , .product-thumb .weight{
+    font-size: 18px !important;
+}
+
+}
